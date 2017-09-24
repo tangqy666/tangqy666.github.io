@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MYLOVE</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+    <link rel="icon" type="image/x-icon" href="images/love/favicon.png" media="screen"/><!--地址栏和标签上显示图标-->
+    <link rel="Bookmark" href="images/love/favicon.png"/><!--收藏夹显示图标-->
+
+    <link rel="stylesheet" href="css/love_a.css"/>
+    <link rel="stylesheet" href="css/love_b.css"/>
+    <!--<link rel="stylesheet" href="css/love_c.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.4.css">-->
+    <script src="js/prefixfree.min.js"></script>
+    <script type="text/javascript" src='js/jquery.min.js'></script>
+    <script type="text/javascript" src='js/jquery.lettering.js'></script>
+    <script src="js/jquery.lwtCountdown-1.0.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#top").lettering();
+            $("#bottom").lettering();
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+<div class="container bg">
+    <div class="hometown">
+        <div class="heart"></div>
+        <div id="top">Made in</div>
+        <div class="city">CYH</div>
+        <div id="bottom">With love</div>
+    </div>
+</div>
+
+
+<div class="container" style="width: 500px;">
+    <div class="timer-box">
+        <h5> NICE TO MEET YOU </h5>
+        <div id="countdown">
+            <div class="dash_day days_dash">
+                <span class="dash_day_title">天</span>
+                <div class="digit">1</div>
+                <div class="digit">0</div>
+                <div class="digit">0</div>
+                <div class="digit">0</div>
+            </div>
+
+            <div class="dash hours_dash">
+                <span class="dash_title">小时</span>
+                <div class="digit">0</div>
+                <div class="digit">0</div>
+            </div>
+
+            <div class="dash minutes_dash">
+                <span class="dash_title">分</span>
+                <div class="digit">0</div>
+                <div class="digit">0</div>
+            </div>
+
+            <div class="dash seconds_dash">
+                <span class="dash_title">秒</span>
+                <div class="digit">0</div>
+                <div class="digit">0</div>
+            </div>
+        </div> <!-- end of countdown -->
+    </div><!--/timer-box-->
+</div><!--/container-->
+
+<!-- start of the javascript code that handles the countdown -->
+<script language="javascript" type="text/javascript">
+    jQuery(document).ready(function () {
+        $('#countdown').countDown({targetDate: {'day': 0, 'month': 0, 'year': 0, 'hour': 0, 'min': 0, 'sec': 0}});
+    });
+</script>
+
+</body>
+</html>
